@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="Some_text">Hello World!</string>
+    <string name="Make_Count">Расчет</string>
+    <string name="Currency_value">Введите сумму</string>
+    <string name="Currency_name">Валюта</string>
+    <string name="Result">Результат</string>
+</resources>
