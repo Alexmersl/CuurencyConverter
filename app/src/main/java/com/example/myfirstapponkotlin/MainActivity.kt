@@ -1,5 +1,6 @@
 package com.example.myfirstapponkotlin
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
@@ -81,4 +82,8 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+    fun toOfflineMode(view: View){
+        val offlineBtn = Intent(this, MainActivity2::class.java)
+        startActivity(offlineBtn)
+    }
 }

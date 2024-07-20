@@ -5,4 +5,6 @@
     <string name="Currency_value">Введите сумму</string>
     <string name="Currency_name">Валюта</string>
     <string name="Result">Результат</string>
+    <string name="Back">Назад</string>
+    <string name="Offline">Оффлйан мод</string>
 </resources>

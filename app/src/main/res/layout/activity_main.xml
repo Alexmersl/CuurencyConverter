@@ -60,22 +60,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="64dp"
-        android:text="to"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toStartOf="@+id/autoCompleteTextView1"
-        app:layout_constraintStart_toEndOf="@+id/autoCompleteTextView2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber3"
-        app:layout_constraintVertical_bias="0.0" />
-
     <AutoCompleteTextView
         android:id="@+id/autoCompleteTextView2"
         android:layout_width="90dp"
@@ -101,5 +85,30 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber3" />
+
+    <Button
+        android:id="@+id/button3"
+        android:onClick="toOfflineMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="254dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/Offline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="143dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginBottom="49dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
