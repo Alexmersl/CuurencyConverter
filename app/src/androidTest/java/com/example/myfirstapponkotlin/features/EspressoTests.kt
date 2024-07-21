@@ -1,18 +1,21 @@
 package com.example.myfirstapponkotlin.features
 
-import android.view.inputmethod.EditorInfo
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
-import androidx.test.espresso.assertion.ViewAssertions
+import androidx.test.espresso.action.ViewActions.closeSoftKeyboard
+import androidx.test.espresso.action.ViewActions.longClick
+import androidx.test.espresso.action.ViewActions.pressBack
+import androidx.test.espresso.action.ViewActions.pressImeActionButton
+import androidx.test.espresso.action.ViewActions.pressKey
+import androidx.test.espresso.action.ViewActions.typeText
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.RootMatchers
 import androidx.test.espresso.matcher.RootMatchers.isTouchable
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.assertThat
-import androidx.test.espresso.matcher.ViewMatchers.hasImeAction
 import androidx.test.espresso.matcher.ViewMatchers.isAssignableFrom
 import androidx.test.espresso.matcher.ViewMatchers.isClickable
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
@@ -32,7 +35,6 @@ import com.google.android.material.textview.MaterialTextView
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.CoreMatchers.startsWith
-import org.hamcrest.Matchers
 import org.hamcrest.Matchers.allOf
 import org.hamcrest.Matchers.anyOf
 import org.hamcrest.Matchers.equalToIgnoringCase
@@ -56,7 +58,7 @@ class EspressoTests : BaseTest() {
 
     @Test
     fun isNullResult() {
-        MainWindowPage.resultFiled.check(ViewAssertions.matches(ViewMatchers.withText("")))
+        MainWindowPage.resultFiled.check(matches(withText("")))
     }
 
     @Test
@@ -83,10 +85,6 @@ class EspressoTests : BaseTest() {
         onView(withText("Расчет")).check(matches(isEnabled()))
     }
 
-    fun supportsInputMethod() {
-        onView(withId(R.id.editTextNumber3)).perform(click())
-        onView(withId(R.id.editTextNumber3)).check(matches(hasImeAction(EditorInfo.IME_ACTION_NEXT)))
-    }
 
     @Test
     fun isAssaignFromClass() {
@@ -101,7 +99,7 @@ class EspressoTests : BaseTest() {
 
     @Test
     fun rootMatcherTest() {
-        var view = onView(withText("Расчет")).inRoot(RootMatchers.isFocusable()) //
+        onView(withText("Расчет")).inRoot(RootMatchers.isFocusable())
         onView(withText("Расчет")).inRoot(isTouchable())
 
     }
@@ -139,7 +137,7 @@ class EspressoTests : BaseTest() {
     }
 
     @Test
-    fun stringMatchers()  {
+    fun stringMatchers() {
         onView(allOf(withHint(`is`("Результат")), withText(isEmptyString()))).check(
             matches(
                 isDisplayed()
@@ -162,8 +160,21 @@ class EspressoTests : BaseTest() {
     }
 
     @Test
-    fun viewActionsTest(){
-        onView(offlineBtnMatcher).click()
+    fun viewActionsTest() {
+        onView(offlineBtnMatcher).click() // click()
+        onView(withId(R.id.button2)).perform(click())
+
+        onView(offlineBtnMatcher).perform(longClick()) // longСlick()
+
+        onView(withId(R.id.editTextNumber3)).perform(typeText("22"))
+            .perform(pressImeActionButton()) // pressImeActionButton() нажимает кнопку "Enter" на клваиатуре
+
+        onView(withId(R.id.editTextNumber3)).perform(pressKey(39)) // perform(pressKey()) нажатие на
+        // соовтествующий номеру элемент на клавиаутре
+
+        onView(ViewMatchers.isRoot()).perform(closeSoftKeyboard())
+            .perform(pressBack()) // closeSoftKeyboard() закрытие клавиатуры и действие назад pressBack()
+
 
     }
 

@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         addCurrencyToDropDownList()
+        setUpLongClickListener()
 
         }
 
@@ -82,6 +84,14 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
+
+    fun setUpLongClickListener(){
+        findViewById<Button>(R.id.button3).setOnLongClickListener {
+            Toast.makeText(this, "Переход в offline", Toast.LENGTH_SHORT).show()
+            true
+        }
+    }
+
     fun toOfflineMode(view: View){
         val offlineBtn = Intent(this, MainActivity2::class.java)
         startActivity(offlineBtn)
