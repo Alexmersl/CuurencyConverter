@@ -56,7 +56,7 @@ public class HttpConnectionClass {
     }
 
 
-    protected static HashSet<String> getCurrencySet(){
+    public static HashSet<String> getCurrencySet(){
         var currencySet = new HashSet<String>();
         var jsonString = establishHTTPСonnect(urlGetCurrency);
         var gson = new Gson();
@@ -72,7 +72,7 @@ public class HttpConnectionClass {
         return currencySet;
     }
 
-    protected static String getAmountResult(){
+    public static String getAmountResult(){
         var jsonString = establishHTTPСonnect(urlGetAmount);
         var gson = new Gson();
         String res = "";

@@ -5,7 +5,7 @@ import android.os.Build
 import androidx.lifecycle.Lifecycle
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.platform.app.InstrumentationRegistry
-//import androidx.test.uiautomator.UiDevice
+import androidx.test.uiautomator.UiDevice
 import com.example.myfirstapponkotlin.MainActivity
 import org.junit.After
 import org.junit.BeforeClass

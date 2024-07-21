@@ -15,6 +15,14 @@
         android:theme="@style/Theme.MyFirstAppOnKotlin"
         tools:targetApi="31">
         <activity
+            android:name=".ui.theme.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false"
+            android:label="@string/title_activity_main3"
+            android:theme="@style/Theme.MyFirstAppOnKotlin" />
+        <activity
             android:name=".MainActivity2"
             android:exported="false" />
         <activity

@@ -86,4 +86,8 @@ class MainActivity : AppCompatActivity() {
         val offlineBtn = Intent(this, MainActivity2::class.java)
         startActivity(offlineBtn)
     }
+
+    fun toHistoryScreen(view : View){
+        startActivity(Intent(this, MainActivity3::class.java))
+    }
 }
