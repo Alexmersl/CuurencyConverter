@@ -7,6 +7,7 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.UiDevice
 import com.example.myfirstapponkotlin.MainActivity
+import com.example.myfirstapponkotlin.pages.UiDevicePreparation.Companion.setDevicePreferences
 import org.junit.After
 import org.junit.BeforeClass
 import org.junit.Rule
@@ -16,29 +17,38 @@ import com.kaspersky.kaspresso.testcases.api.testcase.TestCase
 import com.kaspersky.kaspresso.testcases.core.testcontext.TestContext
 
 open class BaseTest : TestCase(
-kaspressoBuilder = Kaspresso.Builder.simple()
-)  {
+    kaspressoBuilder = Kaspresso.Builder.simple()
+) {
     @get:Rule
     val globalTimeout: Timeout = Timeout.seconds(300)
-/*
-    @get:Rule
-    val windowHierarchyRule = WindowHierarchyRule()
+    /*
+        @get:Rule
+        val windowHierarchyRule = WindowHierarchyRule()
 
- */
+     */
 
     @get:Rule
     val mActivityTestRule = ActivityScenarioRule(MainActivity::class.java)
-  /*
-    @After
-    open fun closeAllActivities() {
-        hideQuickSettingsIfDisplayed()
-        closeNotificationPage()
-        hideNotificationIfDisplayed()
-        if (mActivityTestRule.scenario.state != Lifecycle.State.DESTROYED) {
-            mActivityTestRule.scenario.onActivity { activity: MainActivity -> activity.finishAndRemoveTask() }
-        }
-    }
 
-   */
+    companion object {
+        @JvmStatic
+        @BeforeClass
+        fun beforeAllTests() {
+            setDevicePreferences()
+        }
+
+    }
+    /*
+      @After
+      open fun closeAllActivities() {
+          hideQuickSettingsIfDisplayed()
+          closeNotificationPage()
+          hideNotificationIfDisplayed()
+          if (mActivityTestRule.scenario.state != Lifecycle.State.DESTROYED) {
+              mActivityTestRule.scenario.onActivity { activity: MainActivity -> activity.finishAndRemoveTask() }
+          }
+      }
+
+     */
 
 }

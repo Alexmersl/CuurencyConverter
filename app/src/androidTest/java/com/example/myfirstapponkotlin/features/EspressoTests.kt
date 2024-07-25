@@ -11,6 +11,7 @@ import androidx.test.espresso.action.ViewActions.pressBack
 import androidx.test.espresso.action.ViewActions.pressImeActionButton
 import androidx.test.espresso.action.ViewActions.pressKey
 import androidx.test.espresso.action.ViewActions.typeText
+import androidx.test.espresso.assertion.ViewAssertions.doesNotExist
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.RootMatchers
 import androidx.test.espresso.matcher.RootMatchers.isTouchable
@@ -175,7 +176,17 @@ class EspressoTests : BaseTest() {
         onView(ViewMatchers.isRoot()).perform(closeSoftKeyboard())
             .perform(pressBack()) // closeSoftKeyboard() закрытие клавиатуры и действие назад pressBack()
 
-
     }
+
+    @Test
+    fun viewAssertions() {
+        onView(offlineBtnMatcher).check(matches(isDisplayed())) // matches() позволяет проверять состояние
+        // и характеристики представлений (views)
+
+        onView(withId(R.id.button2)).check(doesNotExist()) // doesNotExist() используется для проверки того,
+        // что определённое представление отсутствует на экране
+    }
+
+
 
 }

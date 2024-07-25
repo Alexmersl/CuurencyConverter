@@ -5,10 +5,19 @@
       <entry key="app">
         <State />
       </entry>
-      <entry key="isDisplayedTest()">
+      <entry key="combiningHamcrestMatchersTest()">
         <State />
       </entry>
-      <entry key="rootMatcherTest()">
+      <entry key="hamCrestMatchers()">
+        <State />
+      </entry>
+      <entry key="hamCrestMatchers() (1)">
+        <State />
+      </entry>
+      <entry key="stringMatchers()">
+        <State />
+      </entry>
+      <entry key="viewActionsTest()">
         <State />
       </entry>
     </value>
