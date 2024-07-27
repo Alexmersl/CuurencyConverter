@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity3">
 
+    <ListView
+        android:id="@+id/currencyHistory"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:foregroundGravity="center"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

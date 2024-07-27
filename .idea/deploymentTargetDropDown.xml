@@ -8,9 +8,6 @@
       <entry key="combiningHamcrestMatchersTest()">
         <State />
       </entry>
-      <entry key="hamCrestMatchers()">
-        <State />
-      </entry>
       <entry key="hamCrestMatchers() (1)">
         <State />
       </entry>
@@ -18,6 +15,9 @@
         <State />
       </entry>
       <entry key="viewActionsTest()">
+        <State />
+      </entry>
+      <entry key="viewAssertions()">
         <State />
       </entry>
     </value>

@@ -1,6 +1,8 @@
 package com.example.myfirstapponkotlin
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
@@ -10,14 +12,17 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.myfirstapponkotlin.HttpConnectionClass.getCurrencySet
-import com.google.android.material.textfield.TextInputEditText
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 
 class MainActivity : AppCompatActivity() {
+
+    private val history = mutableListOf<String>()
+    private lateinit var sharedPreferences: SharedPreferences
+
     companion object {
         var inAmount: String? = ""
         var inCurrency: String? = ""
@@ -28,10 +33,19 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        sharedPreferences = getSharedPreferences("CurrencyHistoryPrefs", Context.MODE_PRIVATE)
+
         addCurrencyToDropDownList()
         setUpLongClickListener()
 
+        findViewById<Button>(R.id.button4).setOnClickListener {
+            val intent = Intent(this, MainActivity3::class.java)
+            intent.putStringArrayListExtra("history", ArrayList(history))
+            startActivity(intent)
+
         }
+    }
 
         private fun addCurrencyToDropDownList() {
             GlobalScope.launch(Dispatchers.IO) {
@@ -74,12 +88,15 @@ class MainActivity : AppCompatActivity() {
                 )
                 GlobalScope.launch(Dispatchers.IO) {
                     val result = HttpConnectionClass.getAmountResult()
-                    runOnUiThread {
+                    var stringHistory = inAmount
+                    withContext(Dispatchers.Main) {
                         val counter: TextView = findViewById(R.id.textView2)
                         counter.text = result
-                        val toast =
-                            Toast.makeText(this@MainActivity, "Расчет окончен", Toast.LENGTH_SHORT)
-                        toast.show()
+
+                        history.add("$stringHistory --> $result")
+
+                        Toast.makeText(this@MainActivity, "Расчет окончен", Toast.LENGTH_SHORT)
+                            .show()
                     }
                 }
             }
@@ -100,4 +117,5 @@ class MainActivity : AppCompatActivity() {
     fun toHistoryScreen(view : View){
         startActivity(Intent(this, MainActivity3::class.java))
     }
+
 }
