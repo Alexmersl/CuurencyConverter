@@ -4,6 +4,7 @@ import android.widget.TextView
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.action.ViewActions.clearText
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.action.ViewActions.closeSoftKeyboard
 import androidx.test.espresso.action.ViewActions.longClick
@@ -30,8 +31,16 @@ import com.example.myfirstapponkotlin.pages.MainWindowPage
 import com.example.myfirstapponkotlin.pages.MainWindowPage.amountInputCheckIsBlank
 import com.example.myfirstapponkotlin.pages.MainWindowPage.convertBtnView
 import com.example.myfirstapponkotlin.R
+import com.example.myfirstapponkotlin.pages.MainWindowPage.clearInputText
 import com.example.myfirstapponkotlin.pages.MainWindowPage.click
+import com.example.myfirstapponkotlin.pages.MainWindowPage.convertBtnClick
+import com.example.myfirstapponkotlin.pages.MainWindowPage.enterAmount
+import com.example.myfirstapponkotlin.pages.MainWindowPage.getAmountFrom
+import com.example.myfirstapponkotlin.pages.MainWindowPage.getAmountTo
+import com.example.myfirstapponkotlin.pages.MainWindowPage.inputAmount
+import com.example.myfirstapponkotlin.pages.MainWindowPage.navigateToHistory
 import com.example.myfirstapponkotlin.pages.MainWindowPage.offlineBtnMatcher
+import com.example.myfirstapponkotlin.pages.MainWindowPage.selectCurrency
 import com.google.android.material.textview.MaterialTextView
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.CoreMatchers.`is`
@@ -66,8 +75,8 @@ class EspressoTests : BaseTest() {
     fun smokeTestGetResult() {
         ActivityScenario.launch(MainActivity::class.java)
         MainWindowPage.enterAmount("500")
-        MainWindowPage.selectCurrency(MainWindowPage.getAmountFrom())
-        MainWindowPage.selectCurrency(MainWindowPage.getAmountTo())
+        MainWindowPage.selectCurrency(getAmountFrom(),"USD")
+        MainWindowPage.selectCurrency(getAmountTo(),"USD")
         MainWindowPage.convertBtnClick()
     }
 
@@ -185,6 +194,24 @@ class EspressoTests : BaseTest() {
 
         onView(withId(R.id.button2)).check(doesNotExist()) // doesNotExist() используется для проверки того,
         // что определённое представление отсутствует на экране
+    }
+
+    @Test
+    fun dataInteractionTest(){
+        repeat(5){
+            clearInputText(inputAmount())
+            enterAmount("34")
+            clearInputText(getAmountFrom())
+            clearInputText(getAmountTo())
+            selectCurrency(getAmountFrom(),"USD")
+            selectCurrency(getAmountTo(),"GEL")
+            convertBtnClick()
+        }
+        navigateToHistory()
+        Thread.sleep(20000)
+        "34 --> 91.9564"
+
+
     }
 
 

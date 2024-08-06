@@ -13,7 +13,7 @@ import java.util.Map;
 
 
 public class HttpConnectionClass {
-    private static final String apiKey = "367217b51779d0d06a6717f7";
+    private static final String apiKey = "3e20f4c7e005a1301fc8ccca";
     private final static String urlGetCurrency = "https://v6.exchangerate-api.com/v6/" + apiKey + "/latest/USD";
     private static String urlGetAmount =
             String.format("https://v6.exchangerate-api.com/v6/" + apiKey + "/pair/%s/%s/%s",

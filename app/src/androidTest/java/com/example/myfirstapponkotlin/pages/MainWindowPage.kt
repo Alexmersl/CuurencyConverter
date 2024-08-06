@@ -5,6 +5,7 @@ import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.ViewAction
 import androidx.test.espresso.ViewInteraction
 import androidx.test.espresso.action.ViewActions
+import androidx.test.espresso.action.ViewActions.clearText
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.withHint
@@ -33,8 +34,12 @@ object MainWindowPage {
         get() = onView(withId(R.id.textView2))
     private val toOfflineBtn: ViewInteraction
         get() = onView(withId(R.id.button3))
+    private val toHistoryBtn : ViewInteraction
+        get() = onView(withId(R.id.button4))
 
     fun ViewInteraction.click(): ViewInteraction = this.perform(ViewActions.click())
+
+    fun inputAmount() : ViewInteraction = amountInput
 
     fun getAmountFrom(): ViewInteraction = amountFrom
     fun getAmountTo(): ViewInteraction = amountTo
@@ -44,14 +49,15 @@ object MainWindowPage {
     fun convertBtnClick() {
         convertBtn.perform(ViewActions.click())
     }
+    fun clearInputText(viewInteraction: ViewInteraction) {
+        viewInteraction.perform(clearText())
+    }
 
     fun enterAmount(string: String) {
         amountInput.perform(ViewActions.typeText(string))
     }
 
-    fun selectCurrency(currency: ViewInteraction) {
-        val hashSet = HttpConnectionClass.getCurrencySet()
-        val strCurrency: String = hashSet.random()
+    fun selectCurrency(currency: ViewInteraction, strCurrency : String) {
         currency.perform(ViewActions.typeText(strCurrency))
         onView(ViewMatchers.withText(strCurrency))
             .perform(ViewActions.click())
@@ -59,6 +65,10 @@ object MainWindowPage {
 
     fun amountInputCheckIsBlank() {
         amountInput.check(matches(not(withHint("Text"))))
+    }
+
+    fun navigateToHistory(){
+        toHistoryBtn.click()
     }
 
     fun getTextResult(): String? {
