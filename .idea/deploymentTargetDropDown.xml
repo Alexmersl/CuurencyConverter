@@ -5,10 +5,7 @@
       <entry key="app">
         <State />
       </entry>
-      <entry key="combiningHamcrestMatchersTest()">
-        <State />
-      </entry>
-      <entry key="hamCrestMatchers() (1)">
+      <entry key="dataInteractionTest()">
         <State />
       </entry>
       <entry key="stringMatchers()">

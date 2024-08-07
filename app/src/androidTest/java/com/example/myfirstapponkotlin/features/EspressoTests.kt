@@ -3,6 +3,7 @@ package com.example.myfirstapponkotlin.features
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatEditText
 import androidx.test.core.app.ActivityScenario
+import androidx.test.espresso.Espresso.onData
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.clearText
 import androidx.test.espresso.action.ViewActions.click
@@ -75,8 +76,8 @@ class EspressoTests : BaseTest() {
     fun smokeTestGetResult() {
         ActivityScenario.launch(MainActivity::class.java)
         MainWindowPage.enterAmount("500")
-        MainWindowPage.selectCurrency(getAmountFrom(),"USD")
-        MainWindowPage.selectCurrency(getAmountTo(),"USD")
+        MainWindowPage.selectCurrency(getAmountFrom(), "USD")
+        MainWindowPage.selectCurrency(getAmountTo(), "USD")
         MainWindowPage.convertBtnClick()
     }
 
@@ -197,23 +198,27 @@ class EspressoTests : BaseTest() {
     }
 
     @Test
-    fun dataInteractionTest(){
-        repeat(5){
+    fun dataInteractionTest() {
+        repeat(5) {
             clearInputText(inputAmount())
             enterAmount("34")
             clearInputText(getAmountFrom())
             clearInputText(getAmountTo())
-            selectCurrency(getAmountFrom(),"USD")
-            selectCurrency(getAmountTo(),"GEL")
+            selectCurrency(getAmountFrom(), "USD")
+            selectCurrency(getAmountTo(), "GEL")
             convertBtnClick()
         }
         navigateToHistory()
-        Thread.sleep(20000)
+
+        Thread.sleep(10000)
+        onData(withText("34 --> 91.9564")).inAdapterView(withId(R.id.currencyHistory))
+            .atPosition(0)
+            .check(matches(isDisplayed()))
+
         "34 --> 91.9564"
 
 
     }
-
 
 
 }
