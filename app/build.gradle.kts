@@ -1,11 +1,16 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
 }
 
 android {
     namespace = "com.example.myfirstapponkotlin"
     compileSdk = 34
+
+    testOptions {
+        execution = "ANDROIDX_TEST_ORCHESTRATOR"
+    }
 
     defaultConfig {
         applicationId = "com.example.myfirstapponkotlin"
@@ -69,15 +74,45 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
     testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation("com.kaspersky.android-components:kaspresso:1.3.0")
     androidTestImplementation("androidx.test.ext:junit:1.1.2")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
     androidTestImplementation(platform("androidx.compose:compose-bom:2023.08.00"))
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     androidTestImplementation("androidx.test.uiautomator:uiautomator:2.2.0")
+    androidTestImplementation("com.kaspersky.android-components:kaspresso:1.3.0")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+    androidTestUtil("androidx.test:orchestrator:1.4.2")
 
+    // Room components
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    annotationProcessor("androidx.room:room-compiler:2.6.1")
+    kapt("androidx.room:room-compiler:2.6.1")
+    
+    // WorkManager
+    implementation("androidx.work:work-runtime-ktx:2.9.0")
+    
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+    
+    // ViewModel and LiveData
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+    
+    // Material Design 3
+    implementation("androidx.compose.material3:material3:1.2.0")
+    implementation("androidx.compose.material3:material3-window-size-class:1.2.0")
+    
+    // Navigation
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+    
+    // DataStore
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
+    
+    // Widget support
+    implementation("androidx.glance:glance:1.0.0")
+    implementation("androidx.glance:glance-appwidget:1.0.0")
 }

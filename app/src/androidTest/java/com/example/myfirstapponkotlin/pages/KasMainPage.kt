@@ -7,7 +7,6 @@ import com.example.myfirstapponkotlin.MainActivity
 import com.example.myfirstapponkotlin.R
 import com.kaspersky.kaspresso.screens.KScreen
 import io.github.kakaocup.kakao.edit.KEditText
-import io.github.kakaocup.kakao.text.KTextView
 
 object KasMainPage : KScreen<KasMainPage>() {
     override val layoutId: Int = R.layout.activity_main

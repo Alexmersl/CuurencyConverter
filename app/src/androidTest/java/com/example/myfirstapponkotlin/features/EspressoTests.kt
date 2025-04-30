@@ -75,10 +75,10 @@ class EspressoTests : BaseTest() {
     @Test
     fun smokeTestGetResult() {
         ActivityScenario.launch(MainActivity::class.java)
-        MainWindowPage.enterAmount("500")
-        MainWindowPage.selectCurrency(getAmountFrom(), "USD")
-        MainWindowPage.selectCurrency(getAmountTo(), "USD")
-        MainWindowPage.convertBtnClick()
+        enterAmount("500")
+        selectCurrency(getAmountFrom(), "USD")
+        selectCurrency(getAmountTo(), "USD")
+        convertBtnClick()
     }
 
     @Test
