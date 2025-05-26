@@ -13,16 +13,19 @@
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="testParameterizedConversion() (1)">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
       <SelectionState runConfigName="stringMatchers()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="smokeTestGetResult()">
+      <SelectionState runConfigName="isNullResult()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="isNullResult()">
+      <SelectionState runConfigName="testCurrencyConversionWithMockServer()">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="test()">
+        <option name="selectionMode" value="DROPDOWN" />
+      </SelectionState>
+      <SelectionState runConfigName="testMockActivityLaunch()">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
