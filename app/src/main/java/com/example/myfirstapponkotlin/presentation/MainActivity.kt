@@ -4,32 +4,63 @@ import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myfirstapponkotlin.MainActivity2
 import com.example.myfirstapponkotlin.R
+import com.example.myfirstapponkotlin.api.CurrencyRepository
+import com.example.myfirstapponkotlin.api.RetrofitClient
+import com.example.myfirstapponkotlin.database.AppDatabase
+import com.example.myfirstapponkotlin.database.DataBaseInit
 import com.example.myfirstapponkotlin.presentation.history.HistoryActivity
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var viewModel: MainViewModel
     private lateinit var sharedPreferences: SharedPreferences
-    private val viewModel: MainViewModel by viewModels()
+    private lateinit var databaseInit: DataBaseInit
+    private val TAG = "MainActivity"
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         
-        sharedPreferences = getSharedPreferences("CurrencyHistoryPrefs", Context.MODE_PRIVATE)
+        sharedPreferences = getSharedPreferences("CurrencyPrefs", Context.MODE_PRIVATE)
+        val database = AppDatabase.getDatabase(this)
+        databaseInit = DataBaseInit(RetrofitClient.currencyApi, database)
+        
+        val repository = CurrencyRepository(RetrofitClient.currencyApi)
+        viewModel = MainViewModel(repository)
         
         setupObservers()
+        
+        CoroutineScope(Dispatchers.IO).launch {
+            try {
+                databaseInit.saveCurrenciesToDb()
+                val currenciesFromDb = databaseInit.getCurrenciesFromDb()
+                
+                withContext(Dispatchers.Main) {
+                    val currencyList = currenciesFromDb.map { it.currencyName }
+                    setupCurrencyDropdowns(currencyList)
+                }
+            } catch (e: Exception) {
+                Log.e(TAG, "Database error", e)
+                withContext(Dispatchers.Main) {
+                    Toast.makeText(this@MainActivity, "Error updating currency data", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+        
         setupClickListeners()
-        viewModel.loadCurrencies()
     }
     
     private fun setupObservers() {
@@ -38,40 +69,41 @@ class MainActivity : AppCompatActivity() {
         }
         
         viewModel.conversionResult.observe(this) { result ->
-            findViewById<TextView>(R.id.textView2).text = result
+            if (result != null) {
+                val history = sharedPreferences.getString("conversion_history", "") ?: ""
+                val newHistory = "$history\n${result}"
+                sharedPreferences.edit().putString("conversion_history", newHistory).apply()
+            }
         }
         
         viewModel.error.observe(this) { error ->
-            Toast.makeText(this, error, Toast.LENGTH_SHORT).show()
+            error?.let {
+                Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
+            }
         }
     }
     
     private fun setupCurrencyDropdowns(currencies: List<String>) {
-        val adapter = ArrayAdapter(
-            this,
-            android.R.layout.simple_dropdown_item_1line,
-            currencies
-        )
+        val adapter = ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, currencies)
         
-        val autoCompleteTextView1 = findViewById<AutoCompleteTextView>(R.id.autoCompleteTextView1)
-        val autoCompleteTextView2 = findViewById<AutoCompleteTextView>(R.id.autoCompleteTextView2)
-        
-        autoCompleteTextView1.setAdapter(adapter)
-        autoCompleteTextView2.setAdapter(adapter)
-        
-        // Показываем список сразу при фокусе
-        autoCompleteTextView1.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) autoCompleteTextView1.showDropDown()
+        findViewById<AutoCompleteTextView>(R.id.autoCompleteTextView1).apply {
+            setAdapter(adapter)
+            setText(currencies.firstOrNull() ?: "", false)
         }
-        autoCompleteTextView2.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) autoCompleteTextView2.showDropDown()
+        
+        findViewById<AutoCompleteTextView>(R.id.autoCompleteTextView2).apply {
+            setAdapter(adapter)
+            setText(currencies.getOrNull(1) ?: "", false)
         }
     }
     
     private fun setupClickListeners() {
         findViewById<Button>(R.id.button4).setOnClickListener {
+            val history = sharedPreferences.getString("conversion_history", "") ?: ""
+            val historyList = history.split("\n").filter { it.isNotEmpty() }
+            
             val intent = Intent(this, HistoryActivity::class.java)
-            intent.putStringArrayListExtra("history", ArrayList(viewModel.getHistory()))
+            intent.putStringArrayListExtra("history", ArrayList(historyList))
             startActivity(intent)
         }
         
@@ -82,20 +114,15 @@ class MainActivity : AppCompatActivity() {
     }
     
     fun onClick(view: View) {
-        val editText: EditText = findViewById(R.id.editTextNumber3)
-        val inputCurrency: AutoCompleteTextView = findViewById(R.id.autoCompleteTextView1)
-        val outputCurrency: AutoCompleteTextView = findViewById(R.id.autoCompleteTextView2)
+        val amountFrom = findViewById<AutoCompleteTextView>(R.id.autoCompleteTextView1).text.toString()
+        val amountTo = findViewById<AutoCompleteTextView>(R.id.autoCompleteTextView2).text.toString()
+        val amount = findViewById<EditText>(R.id.editTextNumber3).text.toString()
         
-        val amount = editText.text.toString()
-        val from = inputCurrency.text.toString()
-        val to = outputCurrency.text.toString()
-        
-        if (amount.isBlank() || from.isBlank() || to.isBlank()) {
-            Toast.makeText(this, "Заполните поля", Toast.LENGTH_SHORT).show()
-            return
+        if (amountFrom.isNotEmpty() && amountTo.isNotEmpty() && amount.isNotEmpty()) {
+            viewModel.convertCurrency(amountFrom, amountTo, amount)
+        } else {
+            Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
         }
-        
-        viewModel.convertCurrency(from, to, amount)
     }
     
     fun toOfflineMode(view: View) {

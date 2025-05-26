@@ -8,9 +8,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.myfirstapponkotlin.api.CurrencyRepository
 import kotlinx.coroutines.launch
 
-class MainViewModel : ViewModel() {
-    private val repository = CurrencyRepository()
-    
+class MainViewModel(private val repository: CurrencyRepository) : ViewModel() {
     private val _currencies = MutableLiveData<List<String>>()
     val currencies: LiveData<List<String>> = _currencies
     
