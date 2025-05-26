@@ -1,18 +1,15 @@
 package com.example.myfirstapponkotlin.features
 
-import android.Manifest
-import android.os.Build
-import androidx.lifecycle.Lifecycle
+
 import androidx.test.ext.junit.rules.ActivityScenarioRule
-import androidx.test.platform.app.InstrumentationRegistry
-import androidx.test.uiautomator.UiDevice
-import com.example.myfirstapponkotlin.presentation.MainActivity
+import com.example.myfirstapponkotlin.MainActivity3
 import com.example.myfirstapponkotlin.pages.UiDevicePreparation.Companion.setDevicePreferences
 import org.junit.BeforeClass
 import org.junit.Rule
 import org.junit.rules.Timeout
 import com.kaspersky.kaspresso.kaspresso.Kaspresso
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase
+import org.junit.Test
 
 open class BaseTest : TestCase(
     kaspressoBuilder = Kaspresso.Builder.simple()
@@ -26,7 +23,7 @@ open class BaseTest : TestCase(
      */
 
     @get:Rule
-    val mActivityTestRule = ActivityScenarioRule(MainActivity::class.java)
+    val mActivityTestRule = ActivityScenarioRule(MainActivity3::class.java)
 
     companion object {
         @JvmStatic
@@ -35,6 +32,11 @@ open class BaseTest : TestCase(
             setDevicePreferences()
         }
 
+    }
+
+    @Test
+    fun test(){
+        Thread.sleep(4000)
     }
     /*
       @After

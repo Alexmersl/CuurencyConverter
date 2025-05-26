@@ -28,6 +28,9 @@
         <activity
             android:name=".MainActivity2"
             android:exported="false" />
+        <activity
+            android:name="com.example.myfirstapponkotlin.MainActivity3"
+            android:exported="false" />
     </application>
 
 </manifest>
