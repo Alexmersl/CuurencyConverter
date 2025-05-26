@@ -10,7 +10,6 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.espresso.matcher.ViewMatchers.withHint
 import androidx.test.espresso.matcher.ViewMatchers.withId
-import com.example.myfirstapponkotlin.HttpConnectionClass
 import com.example.myfirstapponkotlin.R
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers.not

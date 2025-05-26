@@ -27,7 +27,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withClassName
 import androidx.test.espresso.matcher.ViewMatchers.withHint
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
-import com.example.myfirstapponkotlin.MainActivity
+import com.example.myfirstapponkotlin.presentation.MainActivity
 import com.example.myfirstapponkotlin.pages.MainWindowPage
 import com.example.myfirstapponkotlin.pages.MainWindowPage.amountInputCheckIsBlank
 import com.example.myfirstapponkotlin.pages.MainWindowPage.convertBtnView
