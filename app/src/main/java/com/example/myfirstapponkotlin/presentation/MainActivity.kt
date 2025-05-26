@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.myfirstapponkotlin.MainActivity2
@@ -70,9 +71,11 @@ class MainActivity : AppCompatActivity() {
         
         viewModel.conversionResult.observe(this) { result ->
             if (result != null) {
+                findViewById<TextView>(R.id.textView2).text = result
                 val history = sharedPreferences.getString("conversion_history", "") ?: ""
                 val newHistory = "$history\n${result}"
                 sharedPreferences.edit().putString("conversion_history", newHistory).apply()
+                Log.d(TAG, "Result updated: $result")
             }
         }
         
@@ -118,9 +121,13 @@ class MainActivity : AppCompatActivity() {
         val amountTo = findViewById<AutoCompleteTextView>(R.id.autoCompleteTextView2).text.toString()
         val amount = findViewById<EditText>(R.id.editTextNumber3).text.toString()
         
+        Log.d(TAG, "Convert button clicked - From: $amountFrom, To: $amountTo, Amount: $amount")
+        
         if (amountFrom.isNotEmpty() && amountTo.isNotEmpty() && amount.isNotEmpty()) {
             viewModel.convertCurrency(amountFrom, amountTo, amount)
+            Log.d(TAG, "Conversion started")
         } else {
+            Log.w(TAG, "Conversion attempted with empty fields")
             Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
         }
     }
