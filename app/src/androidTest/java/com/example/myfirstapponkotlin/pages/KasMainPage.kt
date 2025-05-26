@@ -3,7 +3,7 @@ package com.example.myfirstapponkotlin.pages
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.ViewInteraction
 import androidx.test.espresso.matcher.ViewMatchers.withId
-import com.example.myfirstapponkotlin.MainActivity
+import com.example.myfirstapponkotlin.presentation.MainActivity
 import com.example.myfirstapponkotlin.R
 import com.kaspersky.kaspresso.screens.KScreen
 import io.github.kakaocup.kakao.edit.KEditText

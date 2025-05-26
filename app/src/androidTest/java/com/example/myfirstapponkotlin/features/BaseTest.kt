@@ -6,15 +6,13 @@ import androidx.lifecycle.Lifecycle
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.uiautomator.UiDevice
-import com.example.myfirstapponkotlin.MainActivity
+import com.example.myfirstapponkotlin.presentation.MainActivity
 import com.example.myfirstapponkotlin.pages.UiDevicePreparation.Companion.setDevicePreferences
-import org.junit.After
 import org.junit.BeforeClass
 import org.junit.Rule
 import org.junit.rules.Timeout
 import com.kaspersky.kaspresso.kaspresso.Kaspresso
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase
-import com.kaspersky.kaspresso.testcases.core.testcontext.TestContext
 
 open class BaseTest : TestCase(
     kaspressoBuilder = Kaspresso.Builder.simple()
