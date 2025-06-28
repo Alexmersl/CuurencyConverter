@@ -4,6 +4,7 @@ plugins {
     id("com.google.devtools.ksp")
 }
 
+
 android {
     namespace = "com.example.myfirstapponkotlin"
     compileSdk = 34
@@ -15,10 +16,14 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "io.qameta.allure.android.runners.AllureAndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
+    }
+
+    testOptions {
+        execution = "ANDROIDX_TEST_ORCHESTRATOR"
     }
 
     buildTypes {
@@ -106,4 +111,17 @@ dependencies {
     androidTestImplementation("io.mockk:mockk-android:1.13.8")
     androidTestImplementation("androidx.test:runner:1.5.2")
     androidTestImplementation("androidx.test:rules:1.5.0")
+    androidTestImplementation("io.qameta.allure:allure-kotlin-android:2.4.0")
+    androidTestImplementation("io.qameta.allure:allure-kotlin-junit4:2.4.0")
+    androidTestImplementation("io.qameta.allure:allure-kotlin-commons:2.4.0")
+    androidTestImplementation("io.qameta.allure:allure-kotlin-model:2.4.0")
+    androidTestUtil("androidx.test:orchestrator:1.4.2")
+}
+
+tasks.register<Exec>("getReport") {
+    commandLine("adb", "pull", "/sdcard/googletest/test_outputfiles/allure-results", "$rootDir/allure-results")
+}
+tasks.register<Exec>("compileReport") {
+    workingDir = file("$rootDir/allure-results")
+    commandLine("allure", "serve", "allure-results")
 }

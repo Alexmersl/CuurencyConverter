@@ -54,6 +54,7 @@ import org.hamcrest.Matchers.isEmptyOrNullString
 import org.hamcrest.Matchers.isEmptyString
 import org.junit.Test
 import org.hamcrest.Matchers.*
+import io.qameta.allure.kotlin.Allure
 
 
 class EspressoTests : BaseTest() {
@@ -69,16 +70,32 @@ class EspressoTests : BaseTest() {
 
     @Test
     fun isNullResult() {
-        MainWindowPage.resultFiled.check(matches(withText("")))
+        Allure.step("Проверяем, что поле результата пустое") {
+            MainWindowPage.resultFiled.check(matches(withText("")))
+        }
     }
 
     @Test
     fun smokeTestGetResult() {
-        ActivityScenario.launch(MainActivity::class.java)
-        MainWindowPage.enterAmount("500")
-        MainWindowPage.selectCurrency(getAmountFrom(), "USD")
-        MainWindowPage.selectCurrency(getAmountTo(), "USD")
-        MainWindowPage.convertBtnClick()
+        Allure.step("Запускаем главную активность") {
+            ActivityScenario.launch(MainActivity::class.java)
+        }
+        
+        Allure.step("Вводим сумму для конвертации: 500") {
+            MainWindowPage.enterAmount("500")
+        }
+        
+        Allure.step("Выбираем валюту 'из': USD") {
+            MainWindowPage.selectCurrency(getAmountFrom(), "USD")
+        }
+        
+        Allure.step("Выбираем валюту 'в': USD") {
+            MainWindowPage.selectCurrency(getAmountTo(), "USD")
+        }
+        
+        Allure.step("Нажимаем кнопку конвертации") {
+            MainWindowPage.convertBtnClick()
+        }
     }
 
     @Test
@@ -199,25 +216,45 @@ class EspressoTests : BaseTest() {
 
     @Test
     fun dataInteractionTest() {
-        repeat(5) {
-            clearInputText(inputAmount())
-            enterAmount("34")
-            clearInputText(getAmountFrom())
-            clearInputText(getAmountTo())
-            selectCurrency(getAmountFrom(), "USD")
-            selectCurrency(getAmountTo(), "GEL")
-            convertBtnClick()
+        Allure.step("Выполняем 5 циклов конвертации валют") {
+            repeat(5) {
+                Allure.step("Цикл ${it + 1}: Очищаем поле ввода суммы") {
+                    clearInputText(inputAmount())
+                }
+                Allure.step("Цикл ${it + 1}: Вводим сумму 34") {
+                    enterAmount("34")
+                }
+                Allure.step("Цикл ${it + 1}: Очищаем поле валюты 'из'") {
+                    clearInputText(getAmountFrom())
+                }
+                Allure.step("Цикл ${it + 1}: Очищаем поле валюты 'в'") {
+                    clearInputText(getAmountTo())
+                }
+                Allure.step("Цикл ${it + 1}: Выбираем USD как валюту 'из'") {
+                    selectCurrency(getAmountFrom(), "USD")
+                }
+                Allure.step("Цикл ${it + 1}: Выбираем GEL как валюту 'в'") {
+                    selectCurrency(getAmountTo(), "GEL")
+                }
+                Allure.step("Цикл ${it + 1}: Выполняем конвертацию") {
+                    convertBtnClick()
+                }
+            }
         }
-        navigateToHistory()
+        
+        Allure.step("Переходим в историю конвертаций") {
+            navigateToHistory()
+        }
 
-        Thread.sleep(10000)
-        onData(withText("34 --> 91.9564")).inAdapterView(withId(R.id.currencyHistory))
-            .atPosition(0)
-            .check(matches(isDisplayed()))
-
-        "34 --> 91.9564"
-
-
+        Allure.step("Ожидаем загрузки истории") {
+            Thread.sleep(10000)
+        }
+        
+        Allure.step("Проверяем, что результат конвертации отображается в истории") {
+            onData(withText("34 --> 91.9564")).inAdapterView(withId(R.id.currencyHistory))
+                .atPosition(0)
+                .check(matches(isDisplayed()))
+        }
     }
 
 

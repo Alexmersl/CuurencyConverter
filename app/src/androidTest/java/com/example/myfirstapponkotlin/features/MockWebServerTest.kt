@@ -104,7 +104,7 @@ class MockWebServerTest {
 
         // Выполняем тестируемые действия
         viewModel.loadCurrencies()
-        viewModel.convertCurrency("USD", "EUR", 100.0)
+        viewModel.convertCurrency("USD", "EUR", "100.0")
 
         // Проверяем, что запросы были отправлены с правильными параметрами
         val request1 = mockWebServer.takeRequest(5, TimeUnit.SECONDS)
