@@ -1,0 +1,53 @@
+{
+    "name": "testWithText",
+    "start": 1751129527418,
+    "stop": 1751129527420,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "f87c49a8-f610-4d56-aaad-38bad2bb462b",
+    "historyId": "4ea35056e35857912cd1c5eb51729148",
+    "fullName": "com.example.myfirstapponkotlin.features.EspressoTests.testWithText",
+    "labels": [
+        {
+            "name": "package",
+            "value": "com.example.myfirstapponkotlin.features"
+        },
+        {
+            "name": "testClass",
+            "value": "com.example.myfirstapponkotlin.features.EspressoTests"
+        },
+        {
+            "name": "testMethod",
+            "value": "testWithText"
+        },
+        {
+            "name": "suite",
+            "value": "com.example.myfirstapponkotlin.features.EspressoTests"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(56)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

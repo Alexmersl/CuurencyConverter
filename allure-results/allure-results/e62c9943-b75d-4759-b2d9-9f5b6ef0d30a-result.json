@@ -1,0 +1,53 @@
+{
+    "name": "smokeTestGetResult",
+    "start": 1751129594837,
+    "stop": 1751129606366,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "e62c9943-b75d-4759-b2d9-9f5b6ef0d30a",
+    "historyId": "e7f3b24de2e4ab9a7bc1dbc98213b6c3",
+    "fullName": "com.example.myfirstapponkotlin.features.KaspressoTests.smokeTestGetResult",
+    "labels": [
+        {
+            "name": "package",
+            "value": "com.example.myfirstapponkotlin.features"
+        },
+        {
+            "name": "testClass",
+            "value": "com.example.myfirstapponkotlin.features.KaspressoTests"
+        },
+        {
+            "name": "testMethod",
+            "value": "smokeTestGetResult"
+        },
+        {
+            "name": "suite",
+            "value": "com.example.myfirstapponkotlin.features.KaspressoTests"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(56)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

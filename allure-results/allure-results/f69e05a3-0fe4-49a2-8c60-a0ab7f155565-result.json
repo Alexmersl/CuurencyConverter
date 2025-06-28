@@ -1,0 +1,53 @@
+{
+    "name": "testCurrencyConversionWithMockServer",
+    "start": 1751129527598,
+    "stop": 1751129527600,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "f69e05a3-0fe4-49a2-8c60-a0ab7f155565",
+    "historyId": "255fcf93fac4c9c5ba6205c554adc126",
+    "fullName": "com.example.myfirstapponkotlin.features.MockWebServerTest.testCurrencyConversionWithMockServer",
+    "labels": [
+        {
+            "name": "package",
+            "value": "com.example.myfirstapponkotlin.features"
+        },
+        {
+            "name": "testClass",
+            "value": "com.example.myfirstapponkotlin.features.MockWebServerTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testCurrencyConversionWithMockServer"
+        },
+        {
+            "name": "suite",
+            "value": "com.example.myfirstapponkotlin.features.MockWebServerTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(56)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "testMockActivityLaunch",
+    "start": 1751129612923,
+    "stop": 1751129618223,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "96b10ca5-7835-4579-b586-5f38d0c2f89b",
+    "historyId": "6673a211c949e78e86bb34f285cdf613",
+    "fullName": "com.example.myfirstapponkotlin.features.MockActivityTest.testMockActivityLaunch",
+    "labels": [
+        {
+            "name": "package",
+            "value": "com.example.myfirstapponkotlin.features"
+        },
+        {
+            "name": "testClass",
+            "value": "com.example.myfirstapponkotlin.features.MockActivityTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "testMockActivityLaunch"
+        },
+        {
+            "name": "suite",
+            "value": "com.example.myfirstapponkotlin.features.MockActivityTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(56)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

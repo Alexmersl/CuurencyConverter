@@ -1,0 +1,85 @@
+{
+    "name": "simpleMockitoTest",
+    "start": 1751129638073,
+    "stop": 1751129638528,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Выполняем простую проверку",
+            "start": 1751129638414,
+            "stop": 1751129638414,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверяем базовую логику",
+            "start": 1751129638414,
+            "stop": 1751129638414,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "2586a924-7062-4db1-ad8c-ba89fe254a2b",
+    "historyId": "4fba6a1f46960ac6868c10fb2f1f1812",
+    "fullName": "com.example.myfirstapponkotlin.features.MockitoTests.simpleMockitoTest",
+    "labels": [
+        {
+            "name": "package",
+            "value": "com.example.myfirstapponkotlin.features"
+        },
+        {
+            "name": "testClass",
+            "value": "com.example.myfirstapponkotlin.features.MockitoTests"
+        },
+        {
+            "name": "testMethod",
+            "value": "simpleMockitoTest"
+        },
+        {
+            "name": "suite",
+            "value": "com.example.myfirstapponkotlin.features.MockitoTests"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(56)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

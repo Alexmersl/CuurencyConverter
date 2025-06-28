@@ -1,0 +1,683 @@
+{
+    "name": "dataInteractionTest",
+    "start": 1751129555999,
+    "stop": 1751129579455,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "broken",
+    "statusDetails": {
+        "message": "No views in hierarchy found matching: view.getId() is <2131230867/com.example.myfirstapponkotlin:id/currencyHistory>\n\nView Hierarchy:\n+>DecorView{id=-1, visibility=VISIBLE, width=1080, height=2400, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(fillxfill) ty=BASE_APPLICATION wanim=0x10302fe\n  fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS\n  pfl=NO_MOVE_ANIMATION FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED\n  bhv=DEFAULT\n  fitSides=}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=2337, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+-->ViewStub{id=16908746, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->FrameLayout{id=-1, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=136.0, child-count=1} \n|\n+--->FitWindowsLinearLayout{id=2131230778, res-name=action_bar_root, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+---->ViewStubCompat{id=2131230789, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+----->ConstraintLayout{id=-1, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=7} \n|\n+------>MaterialButton{id=2131230826, res-name=button, visibility=VISIBLE, width=231, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=425.0, y=1280.0, text=Расчет, input-type=0, ime-target=false, has-links=false, is-checked=false} \n|\n+------>AppCompatEditText{id=2131230906, res-name=editTextNumber3, visibility=VISIBLE, width=550, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x2 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=2 initialSelEnd=2 initialToolType=0 initialCapsMode=0x0 hintText=Введите сумму label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE contentMimeTypes=null ], x=265.0, y=263.0, text=34, hint=Введите сумму, input-type=2, ime-target=false, has-links=false} \n|\n+------>MaterialTextView{id=2131231196, res-name=textView2, visibility=VISIBLE, width=368, height=105, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=355.0, y=1059.0, text=12.4848, hint=Результат, input-type=0, ime-target=false, has-links=false} \n|\n+------>MaterialAutoCompleteTextView{id=2131230812, res-name=autoCompleteTextView2, visibility=VISIBLE, width=236, height=184, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x30001 imeOptions=0x44000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=3 initialSelEnd=3 initialToolType=0 initialCapsMode=0x0 hintText=Валюта label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE contentMimeTypes=null ], x=726.0, y=627.0, text=USD, hint=Валюта, input-type=196609, ime-target=false, has-links=false} \n|\n+------>MaterialAutoCompleteTextView{id=2131230811, res-name=autoCompleteTextView1, visibility=VISIBLE, width=236, height=184, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x30001 imeOptions=0x44000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=3 initialSelEnd=3 initialToolType=0 initialCapsMode=0x0 hintText=Валюта label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE contentMimeTypes=null ], x=118.0, y=627.0, text=GEL, hint=Валюта, input-type=196609, ime-target=true, has-links=false} \n|\n+------>MaterialButton{id=2131230828, res-name=button3, visibility=VISIBLE, width=371, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=667.0, y=1944.0, text=Оффлйан мод, input-type=0, ime-target=false, has-links=false, is-checked=false} \n|\n+------>MaterialButton{id=2131230829, res-name=button4, visibility=VISIBLE, width=375, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=119.0, y=1946.0, text=History, input-type=0, ime-target=false, has-links=false, is-checked=false} ",
+        "trace": "androidx.test.espresso.NoMatchingViewException: No views in hierarchy found matching: view.getId() is <2131230867/com.example.myfirstapponkotlin:id/currencyHistory>\n\nView Hierarchy:\n+>DecorView{id=-1, visibility=VISIBLE, width=1080, height=2400, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(fillxfill) ty=BASE_APPLICATION wanim=0x10302fe\n  fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS\n  pfl=NO_MOVE_ANIMATION FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED\n  bhv=DEFAULT\n  fitSides=}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=2337, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+-->ViewStub{id=16908746, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->FrameLayout{id=-1, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=136.0, child-count=1} \n|\n+--->FitWindowsLinearLayout{id=2131230778, res-name=action_bar_root, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+---->ViewStubCompat{id=2131230789, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+----->ConstraintLayout{id=-1, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=7} \n|\n+------>MaterialButton{id=2131230826, res-name=button, visibility=VISIBLE, width=231, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=425.0, y=1280.0, text=Расчет, input-type=0, ime-target=false, has-links=false, is-checked=false} \n|\n+------>AppCompatEditText{id=2131230906, res-name=editTextNumber3, visibility=VISIBLE, width=550, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x2 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=2 initialSelEnd=2 initialToolType=0 initialCapsMode=0x0 hintText=Введите сумму label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE contentMimeTypes=null ], x=265.0, y=263.0, text=34, hint=Введите сумму, input-type=2, ime-target=false, has-links=false} \n|\n+------>MaterialTextView{id=2131231196, res-name=textView2, visibility=VISIBLE, width=368, height=105, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=355.0, y=1059.0, text=12.4848, hint=Результат, input-type=0, ime-target=false, has-links=false} \n|\n+------>MaterialAutoCompleteTextView{id=2131230812, res-name=autoCompleteTextView2, visibility=VISIBLE, width=236, height=184, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x30001 imeOptions=0x44000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=3 initialSelEnd=3 initialToolType=0 initialCapsMode=0x0 hintText=Валюта label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE contentMimeTypes=null ], x=726.0, y=627.0, text=USD, hint=Валюта, input-type=196609, ime-target=false, has-links=false} \n|\n+------>MaterialAutoCompleteTextView{id=2131230811, res-name=autoCompleteTextView1, visibility=VISIBLE, width=236, height=184, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x30001 imeOptions=0x44000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=3 initialSelEnd=3 initialToolType=0 initialCapsMode=0x0 hintText=Валюта label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE contentMimeTypes=null ], x=118.0, y=627.0, text=GEL, hint=Валюта, input-type=196609, ime-target=true, has-links=false} \n|\n+------>MaterialButton{id=2131230828, res-name=button3, visibility=VISIBLE, width=371, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=667.0, y=1944.0, text=Оффлйан мод, input-type=0, ime-target=false, has-links=false, is-checked=false} \n|\n+------>MaterialButton{id=2131230829, res-name=button4, visibility=VISIBLE, width=375, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=119.0, y=1946.0, text=History, input-type=0, ime-target=false, has-links=false, is-checked=false} \n\tat dalvik.system.VMStack.getThreadStackTrace(Native Method)\n\tat java.lang.Thread.getStackTrace(Thread.java:1841)\n\tat com.kaspersky.kaspresso.failure.FailureLoggingProviderImpl.describedWith(FailureLoggingProviderImpl.kt:91)\n\tat com.kaspersky.kaspresso.failure.FailureLoggingProviderImpl.logDescriptionAndThrow(FailureLoggingProviderImpl.kt:69)\n\tat com.kaspersky.kaspresso.failure.LoggingFailureHandler.logDescriptionAndThrow(Unknown Source:2)\n\tat com.kaspersky.kaspresso.failure.LoggingFailureHandler.handle(LoggingFailureHandler.kt:21)\n\tat androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:8)\n\tat androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:11)\n\tat androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:8)\n\tat androidx.test.espresso.DataInteraction$DisplayDataMatcher$1.apply(DataInteraction.java:1)\n\tat androidx.test.espresso.DataInteraction$DisplayDataMatcher$1.apply(DataInteraction.java:2)\n\tat androidx.test.espresso.DataInteraction$DisplayDataMatcher.<init>(DataInteraction.java:7)\n\tat androidx.test.espresso.DataInteraction$DisplayDataMatcher.<init>(DataInteraction.java:13)\n\tat androidx.test.espresso.DataInteraction$DisplayDataMatcher.displayDataMatcher(DataInteraction.java:1)\n\tat androidx.test.espresso.DataInteraction.makeTargetMatcher(DataInteraction.java:2)\n\tat androidx.test.espresso.DataInteraction.check(DataInteraction.java:1)\n\tat com.example.myfirstapponkotlin.features.EspressoTests$dataInteractionTest$4.invoke(EspressoTests.kt:256)\n\tat com.example.myfirstapponkotlin.features.EspressoTests$dataInteractionTest$4.invoke(EspressoTests.kt:253)\n\tat io.qameta.allure.kotlin.Allure.step(Allure.kt:60)\n\tat com.example.myfirstapponkotlin.features.EspressoTests.dataInteractionTest(EspressoTests.kt:253)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.lang.Thread.run(Thread.java:1012)\n"
+    },
+    "steps": [
+        {
+            "name": "Выполняем 5 циклов конвертации валют",
+            "start": 1751129556245,
+            "stop": 1751129568615,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+                {
+                    "name": "Цикл 1: Очищаем поле ввода суммы",
+                    "start": 1751129556248,
+                    "stop": 1751129556291,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 1: Вводим сумму 34",
+                    "start": 1751129556291,
+                    "stop": 1751129556677,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 1: Очищаем поле валюты 'из'",
+                    "start": 1751129556677,
+                    "stop": 1751129556682,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 1: Очищаем поле валюты 'в'",
+                    "start": 1751129556682,
+                    "stop": 1751129556699,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 1: Выбираем USD как валюту 'из'",
+                    "start": 1751129556699,
+                    "stop": 1751129557596,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 1: Выбираем GEL как валюту 'в'",
+                    "start": 1751129557597,
+                    "stop": 1751129558497,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 1: Выполняем конвертацию",
+                    "start": 1751129558498,
+                    "stop": 1751129558796,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 2: Очищаем поле ввода суммы",
+                    "start": 1751129558796,
+                    "stop": 1751129558801,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 2: Вводим сумму 34",
+                    "start": 1751129558801,
+                    "stop": 1751129559187,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 2: Очищаем поле валюты 'из'",
+                    "start": 1751129559187,
+                    "stop": 1751129559192,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 2: Очищаем поле валюты 'в'",
+                    "start": 1751129559192,
+                    "stop": 1751129559201,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 2: Выбираем USD как валюту 'из'",
+                    "start": 1751129559201,
+                    "stop": 1751129560182,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 2: Выбираем GEL как валюту 'в'",
+                    "start": 1751129560182,
+                    "stop": 1751129561014,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 2: Выполняем конвертацию",
+                    "start": 1751129561014,
+                    "stop": 1751129561328,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 3: Очищаем поле ввода суммы",
+                    "start": 1751129561328,
+                    "stop": 1751129561334,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 3: Вводим сумму 34",
+                    "start": 1751129561334,
+                    "stop": 1751129561720,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 3: Очищаем поле валюты 'из'",
+                    "start": 1751129561720,
+                    "stop": 1751129561724,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 3: Очищаем поле валюты 'в'",
+                    "start": 1751129561725,
+                    "stop": 1751129561732,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 3: Выбираем USD как валюту 'из'",
+                    "start": 1751129561733,
+                    "stop": 1751129562630,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 3: Выбираем GEL как валюту 'в'",
+                    "start": 1751129562631,
+                    "stop": 1751129563480,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 3: Выполняем конвертацию",
+                    "start": 1751129563480,
+                    "stop": 1751129563781,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 4: Очищаем поле ввода суммы",
+                    "start": 1751129563781,
+                    "stop": 1751129563785,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 4: Вводим сумму 34",
+                    "start": 1751129563785,
+                    "stop": 1751129564154,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 4: Очищаем поле валюты 'из'",
+                    "start": 1751129564155,
+                    "stop": 1751129564159,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 4: Очищаем поле валюты 'в'",
+                    "start": 1751129564159,
+                    "stop": 1751129564167,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 4: Выбираем USD как валюту 'из'",
+                    "start": 1751129564167,
+                    "stop": 1751129565030,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 4: Выбираем GEL как валюту 'в'",
+                    "start": 1751129565030,
+                    "stop": 1751129565896,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 4: Выполняем конвертацию",
+                    "start": 1751129565896,
+                    "stop": 1751129566198,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 5: Очищаем поле ввода суммы",
+                    "start": 1751129566198,
+                    "stop": 1751129566207,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 5: Вводим сумму 34",
+                    "start": 1751129566207,
+                    "stop": 1751129566570,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 5: Очищаем поле валюты 'из'",
+                    "start": 1751129566570,
+                    "stop": 1751129566574,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 5: Очищаем поле валюты 'в'",
+                    "start": 1751129566574,
+                    "stop": 1751129566584,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 5: Выбираем USD как валюту 'из'",
+                    "start": 1751129566584,
+                    "stop": 1751129567447,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 5: Выбираем GEL как валюту 'в'",
+                    "start": 1751129567447,
+                    "stop": 1751129568315,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                },
+                {
+                    "name": "Цикл 5: Выполняем конвертацию",
+                    "start": 1751129568315,
+                    "stop": 1751129568615,
+                    "stage": "finished",
+                    "description": null,
+                    "descriptionHtml": null,
+                    "status": "passed",
+                    "statusDetails": null,
+                    "steps": [
+                    ],
+                    "attachments": [
+                    ],
+                    "parameters": [
+                    ]
+                }
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Переходим в историю конвертаций",
+            "start": 1751129568615,
+            "stop": 1751129568895,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Ожидаем загрузки истории",
+            "start": 1751129568896,
+            "stop": 1751129578898,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверяем, что результат конвертации отображается в истории",
+            "start": 1751129578902,
+            "stop": 1751129578973,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "broken",
+            "statusDetails": {
+                "message": "No views in hierarchy found matching: view.getId() is <2131230867/com.example.myfirstapponkotlin:id/currencyHistory>\n\nView Hierarchy:\n+>DecorView{id=-1, visibility=VISIBLE, width=1080, height=2400, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(fillxfill) ty=BASE_APPLICATION wanim=0x10302fe\n  fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS\n  pfl=NO_MOVE_ANIMATION FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED\n  bhv=DEFAULT\n  fitSides=}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=2337, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+-->ViewStub{id=16908746, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->FrameLayout{id=-1, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=136.0, child-count=1} \n|\n+--->FitWindowsLinearLayout{id=2131230778, res-name=action_bar_root, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+---->ViewStubCompat{id=2131230789, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+----->ConstraintLayout{id=-1, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=7} \n|\n+------>MaterialButton{id=2131230826, res-name=button, visibility=VISIBLE, width=231, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=425.0, y=1280.0, text=Расчет, input-type=0, ime-target=false, has-links=false, is-checked=false} \n|\n+------>AppCompatEditText{id=2131230906, res-name=editTextNumber3, visibility=VISIBLE, width=550, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x2 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=2 initialSelEnd=2 initialToolType=0 initialCapsMode=0x0 hintText=Введите сумму label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE contentMimeTypes=null ], x=265.0, y=263.0, text=34, hint=Введите сумму, input-type=2, ime-target=false, has-links=false} \n|\n+------>MaterialTextView{id=2131231196, res-name=textView2, visibility=VISIBLE, width=368, height=105, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=355.0, y=1059.0, text=12.4848, hint=Результат, input-type=0, ime-target=false, has-links=false} \n|\n+------>MaterialAutoCompleteTextView{id=2131230812, res-name=autoCompleteTextView2, visibility=VISIBLE, width=236, height=184, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x30001 imeOptions=0x44000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=3 initialSelEnd=3 initialToolType=0 initialCapsMode=0x0 hintText=Валюта label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE contentMimeTypes=null ], x=726.0, y=627.0, text=USD, hint=Валюта, input-type=196609, ime-target=false, has-links=false} \n|\n+------>MaterialAutoCompleteTextView{id=2131230811, res-name=autoCompleteTextView1, visibility=VISIBLE, width=236, height=184, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x30001 imeOptions=0x44000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=3 initialSelEnd=3 initialToolType=0 initialCapsMode=0x0 hintText=Валюта label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE contentMimeTypes=null ], x=118.0, y=627.0, text=GEL, hint=Валюта, input-type=196609, ime-target=true, has-links=false} \n|\n+------>MaterialButton{id=2131230828, res-name=button3, visibility=VISIBLE, width=371, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=667.0, y=1944.0, text=Оффлйан мод, input-type=0, ime-target=false, has-links=false, is-checked=false} \n|\n+------>MaterialButton{id=2131230829, res-name=button4, visibility=VISIBLE, width=375, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=119.0, y=1946.0, text=History, input-type=0, ime-target=false, has-links=false, is-checked=false} ",
+                "trace": "androidx.test.espresso.NoMatchingViewException: No views in hierarchy found matching: view.getId() is <2131230867/com.example.myfirstapponkotlin:id/currencyHistory>\n\nView Hierarchy:\n+>DecorView{id=-1, visibility=VISIBLE, width=1080, height=2400, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(fillxfill) ty=BASE_APPLICATION wanim=0x10302fe\n  fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS\n  pfl=NO_MOVE_ANIMATION FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED\n  bhv=DEFAULT\n  fitSides=}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=2337, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+-->ViewStub{id=16908746, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->FrameLayout{id=-1, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=136.0, child-count=1} \n|\n+--->FitWindowsLinearLayout{id=2131230778, res-name=action_bar_root, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+---->ViewStubCompat{id=2131230789, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+----->ConstraintLayout{id=-1, visibility=VISIBLE, width=1080, height=2201, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=7} \n|\n+------>MaterialButton{id=2131230826, res-name=button, visibility=VISIBLE, width=231, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=425.0, y=1280.0, text=Расчет, input-type=0, ime-target=false, has-links=false, is-checked=false} \n|\n+------>AppCompatEditText{id=2131230906, res-name=editTextNumber3, visibility=VISIBLE, width=550, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x2 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=2 initialSelEnd=2 initialToolType=0 initialCapsMode=0x0 hintText=Введите сумму label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE contentMimeTypes=null ], x=265.0, y=263.0, text=34, hint=Введите сумму, input-type=2, ime-target=false, has-links=false} \n|\n+------>MaterialTextView{id=2131231196, res-name=textView2, visibility=VISIBLE, width=368, height=105, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=355.0, y=1059.0, text=12.4848, hint=Результат, input-type=0, ime-target=false, has-links=false} \n|\n+------>MaterialAutoCompleteTextView{id=2131230812, res-name=autoCompleteTextView2, visibility=VISIBLE, width=236, height=184, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x30001 imeOptions=0x44000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=3 initialSelEnd=3 initialToolType=0 initialCapsMode=0x0 hintText=Валюта label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE contentMimeTypes=null ], x=726.0, y=627.0, text=USD, hint=Валюта, input-type=196609, ime-target=false, has-links=false} \n|\n+------>MaterialAutoCompleteTextView{id=2131230811, res-name=autoCompleteTextView1, visibility=VISIBLE, width=236, height=184, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x30001 imeOptions=0x44000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=3 initialSelEnd=3 initialToolType=0 initialCapsMode=0x0 hintText=Валюта label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=9, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null supportedHandwritingGestureTypes=SELECT|SELECT_RANGE|INSERT|DELETE|DELETE_RANGE|REMOVE_SPACE|JOIN_OR_SPLIT supportedHandwritingGesturePreviewTypes=SELECT|SELECT_RANGE|DELETE|DELETE_RANGE contentMimeTypes=null ], x=118.0, y=627.0, text=GEL, hint=Валюта, input-type=196609, ime-target=true, has-links=false} \n|\n+------>MaterialButton{id=2131230828, res-name=button3, visibility=VISIBLE, width=371, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=667.0, y=1944.0, text=Оффлйан мод, input-type=0, ime-target=false, has-links=false, is-checked=false} \n|\n+------>MaterialButton{id=2131230829, res-name=button4, visibility=VISIBLE, width=375, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@YYYYYY, tag=null, root-is-layout-requested=false, has-input-connection=false, x=119.0, y=1946.0, text=History, input-type=0, ime-target=false, has-links=false, is-checked=false} \n\tat dalvik.system.VMStack.getThreadStackTrace(Native Method)\n\tat java.lang.Thread.getStackTrace(Thread.java:1841)\n\tat com.kaspersky.kaspresso.failure.FailureLoggingProviderImpl.describedWith(FailureLoggingProviderImpl.kt:91)\n\tat com.kaspersky.kaspresso.failure.FailureLoggingProviderImpl.logDescriptionAndThrow(FailureLoggingProviderImpl.kt:69)\n\tat com.kaspersky.kaspresso.failure.LoggingFailureHandler.logDescriptionAndThrow(Unknown Source:2)\n\tat com.kaspersky.kaspresso.failure.LoggingFailureHandler.handle(LoggingFailureHandler.kt:21)\n\tat androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:8)\n\tat androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:11)\n\tat androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:8)\n\tat androidx.test.espresso.DataInteraction$DisplayDataMatcher$1.apply(DataInteraction.java:1)\n\tat androidx.test.espresso.DataInteraction$DisplayDataMatcher$1.apply(DataInteraction.java:2)\n\tat androidx.test.espresso.DataInteraction$DisplayDataMatcher.<init>(DataInteraction.java:7)\n\tat androidx.test.espresso.DataInteraction$DisplayDataMatcher.<init>(DataInteraction.java:13)\n\tat androidx.test.espresso.DataInteraction$DisplayDataMatcher.displayDataMatcher(DataInteraction.java:1)\n\tat androidx.test.espresso.DataInteraction.makeTargetMatcher(DataInteraction.java:2)\n\tat androidx.test.espresso.DataInteraction.check(DataInteraction.java:1)\n\tat com.example.myfirstapponkotlin.features.EspressoTests$dataInteractionTest$4.invoke(EspressoTests.kt:256)\n\tat com.example.myfirstapponkotlin.features.EspressoTests$dataInteractionTest$4.invoke(EspressoTests.kt:253)\n\tat io.qameta.allure.kotlin.Allure.step(Allure.kt:60)\n\tat com.example.myfirstapponkotlin.features.EspressoTests.dataInteractionTest(EspressoTests.kt:253)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:299)\n\tat org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:293)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:264)\n\tat java.lang.Thread.run(Thread.java:1012)\n"
+            },
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "556fd978-d2a0-4a90-bb5d-60e9240333f8",
+    "historyId": "3eccf444b19b426080bbe1f9fb8a9bc4",
+    "fullName": "com.example.myfirstapponkotlin.features.EspressoTests.dataInteractionTest",
+    "labels": [
+        {
+            "name": "package",
+            "value": "com.example.myfirstapponkotlin.features"
+        },
+        {
+            "name": "testClass",
+            "value": "com.example.myfirstapponkotlin.features.EspressoTests"
+        },
+        {
+            "name": "testMethod",
+            "value": "dataInteractionTest"
+        },
+        {
+            "name": "suite",
+            "value": "com.example.myfirstapponkotlin.features.EspressoTests"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(56)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

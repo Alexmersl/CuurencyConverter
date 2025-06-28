@@ -1,0 +1,56 @@
+{
+    "name": "initializationError",
+    "start": 1751129527656,
+    "stop": 1751129527667,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "broken",
+    "statusDetails": {
+        "message": "Failed to instantiate test runner class androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner\n\n",
+        "trace": "java.lang.RuntimeException: Failed to instantiate test runner class androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner\n\n\n\tat androidx.test.ext.junit.runners.AndroidJUnit4.throwInitializationError(AndroidJUnit4.java:129)\n\tat androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(AndroidJUnit4.java:121)\n\tat androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(AndroidJUnit4.java:82)\n\tat androidx.test.ext.junit.runners.AndroidJUnit4.<init>(AndroidJUnit4.java:56)\n\tat java.lang.reflect.Constructor.newInstance0(Native Method)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:343)\n\tat org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)\n\tat org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)\n\tat androidx.test.internal.runner.junit4.AndroidAnnotatedBuilder.runnerForClass(AndroidAnnotatedBuilder.java:63)\n\tat org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)\n\tat org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:37)\n\tat androidx.test.internal.runner.AndroidRunnerBuilder.runnerForClass(AndroidRunnerBuilder.java:149)\n\tat androidx.test.internal.runner.AndroidLogOnlyBuilder.runnerForClass(AndroidLogOnlyBuilder.java:93)\n\tat androidx.test.internal.runner.ScanningTestLoader.doCreateRunner(ScanningTestLoader.java:50)\n\tat androidx.test.internal.runner.TestLoader.getRunnersFor(TestLoader.java:64)\n\tat androidx.test.internal.runner.TestRequestBuilder.build(TestRequestBuilder.java:835)\n\tat androidx.test.runner.AndroidJUnitRunner.buildRequest(AndroidJUnitRunner.java:650)\n\tat androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:418)\n\tat android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2402)\nCaused by: java.lang.reflect.InvocationTargetException\n\tat java.lang.reflect.Constructor.newInstance0(Native Method)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:343)\n\tat androidx.test.ext.junit.runners.AndroidJUnit4.loadRunner(AndroidJUnit4.java:112)\n\t... 17 more\nCaused by: org.junit.runners.model.InvalidTestClassError: Invalid test class 'com.example.myfirstapponkotlin.features.RequestInterceptorTest':\n  1. Method testRequestInterception() should be void\n  2. Method testRequestInterception should have no parameters\n  3. Method testResponseInterception() should be void\n  4. Method testResponseInterception should have no parameters\n\tat org.junit.runners.ParentRunner.validate(ParentRunner.java:525)\n\tat org.junit.runners.ParentRunner.<init>(ParentRunner.java:92)\n\tat org.junit.runners.BlockJUnit4ClassRunner.<init>(BlockJUnit4ClassRunner.java:74)\n\tat androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner.<init>(AndroidJUnit4ClassRunner.java:43)\n\tat androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner.<init>(AndroidJUnit4ClassRunner.java:48)\n\t... 20 more\n"
+    },
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "5a7a9cef-d330-415f-ab31-f6e05e020190",
+    "historyId": "eb4230bf2dac15ef6ba07a61a7cae24a",
+    "fullName": "com.example.myfirstapponkotlin.features.RequestInterceptorTest.initializationError",
+    "labels": [
+        {
+            "name": "package",
+            "value": "com.example.myfirstapponkotlin.features"
+        },
+        {
+            "name": "testClass",
+            "value": "com.example.myfirstapponkotlin.features.RequestInterceptorTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "initializationError"
+        },
+        {
+            "name": "suite",
+            "value": "com.example.myfirstapponkotlin.features.RequestInterceptorTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: io.qameta.allure.android.runners.AllureAndroidJUnitRunner(56)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}
